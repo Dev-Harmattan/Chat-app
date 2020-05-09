@@ -1,0 +1,58 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-v2.png");
+    background-color: #f1e3cb;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0, auto;
+    padding: 5% 35%;
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ca5116;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #581c0c;
+    margin: 20px 0;
+
+}
+
+#sign_form{
+    margin: 10% auto;
+    
+}
+
+form input{
+    border-radius: 15px;
+}
+
+.btn{
+    font-weight: 700;
+    padding: 5px auto;
+    width: 50%;
+    height: 40px;
+    background-color: #ca5116; 
+    border-radius: 20px;
+    border: 1px #f1e3cb;
+    margin-bottom: 15px;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+
+@media(max-width: 1028px){
+    body{
+        padding: 10% 20%;
+    }
+}
+

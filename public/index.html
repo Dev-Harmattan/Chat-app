@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" id="bootstrap-css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="button close"></div>
+                <div class="button minimize"></div>
+                <div class="button maximize"></div>
+            </div>
+            <div class="title">Chat</div>
+            <ul id="messages" class="messages">
+
+            </ul>
+        </div>
+        <div class="bottom_wrapper clearfix">
+            <i style="background-color: blue;" id="typing"></i>
+            <form id="form">
+              <div class="message_input_wrapper">
+                  <input id="message" class="message_input" placeholder="Type your message here..." />
+              </div>
+              <button class="send_message">
+                 Send
+              </button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/socket.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rexeze/formatTimeStamp/src/index-cdn.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>socket.io</title>
+</head>
+<body>
+    <h1>Communication with socket.io!</h1>
+    <img src="" alt="" srcset="">
+
+    <p><input type="button" value="poke the server" id="poke"></p>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+        
+        //Connection management between client and server
+        var socket = io.connect("http://localhost:8080");
+
+        let variable =  prompt("What is your name?")
+        socket.emit("newbie_client", variable);
+
+        //client listen to server message
+        socket.on("message", (message) => {
+            alert("The server has message for you! " + message);
+        })
+
+        //the client send message to the server
+        $("#poke").click( () => {
+            $("#poke").css("color", "blue");
+            socket.emit("message", "Hi server, How are you?");
+        })
+
+    </script>
+</body>
+</html> -->
